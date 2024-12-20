@@ -1,0 +1,9 @@
+li{
+    border-bottom: dashed 1px #ccc;
+    margin: 10px 0;
+    padding: 5px;
+}
+li>span{
+    background-color: bisque;
+    padding: 5px;
+}

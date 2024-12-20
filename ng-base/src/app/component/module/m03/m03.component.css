@@ -1,0 +1,7 @@
+div,p{
+    margin: 10px 0;
+}
+p{
+    background-color: bisque;
+    padding: 5px;
+}

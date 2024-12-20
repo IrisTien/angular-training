@@ -1,0 +1,4 @@
+<app-tab-list>
+    <app-tab *ngFor="let tab of tabs" [tab]="tab"></app-tab>
+</app-tab-list>
+<input type="text" [(ngModel)]="tabs[0].title">

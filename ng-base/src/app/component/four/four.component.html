@@ -1,0 +1,14 @@
+<div>
+    <span>前景：</span>
+    <input type="text" [(ngModel)]="fg">
+</div>
+<div>
+    <span>背景：</span>
+    <input type="text" [(ngModel)]="bg">
+</div>
+<div style="padding: 5px;" [style.color]="fg" [style.background-color]="bg">
+    我会变化前景和背景色哦！
+</div>
+<div [ngStyle]="{'padding': '5px','color':fg,'background-color':bg}">
+    我会变化前景和背景色哦！
+</div>

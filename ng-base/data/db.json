@@ -1,0 +1,19 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "天气",
+      "author": "tgrong"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "讲的真是好极了！",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "tgrong"
+  }
+}

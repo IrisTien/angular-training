@@ -1,0 +1,12 @@
+<h3>个人介绍</h3>
+<ul *ngIf="blnShow" [class.blue]="blnShow">
+    <li>姓名：tgrong</li>
+    <li>年龄：18岁</li>
+    <li>工作：写代码</li>
+</ul>
+<ul *ngIf="!blnShow">
+    <li>姓名：xxx</li>
+    <li>年龄：不详</li>
+    <li>工作：写代码</li>
+</ul>
+<button (click)="toggle()">切换</button>

@@ -1,0 +1,23 @@
+ul{
+    border:solid 1px #ccc;
+    height: 210px;
+    overflow:hidden;
+}
+li{
+    border-bottom: dashed 1px #ccc;
+    padding: 5px 10px;
+    overflow: hidden;
+}
+.title{
+    border-bottom: solid 1px #666;
+    padding: 5px 10px;
+    overflow: hidden;
+    background-color: #ccc;
+}
+h3{
+    margin-bottom: 10px;
+}
+span{
+    float: left;
+    width: 100px;
+}

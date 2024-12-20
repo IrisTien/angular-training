@@ -1,0 +1,27 @@
+ul{
+    border:solid 1px #ccc;
+}
+.noline{
+    border:none;
+}
+.odd{
+    background-color: bisque;
+}
+p,div,ul{
+    margin: 10px 0;
+}
+li.title{
+    border-bottom: solid 1px #666;
+    padding: 5px 10px;
+    overflow: hidden;
+    background-color: #ccc;
+}
+li{
+    border-bottom: dashed 1px #ccc;
+    padding: 5px 10px;
+    overflow: hidden;
+}
+span{
+    float: left;
+    width: 100px;
+}

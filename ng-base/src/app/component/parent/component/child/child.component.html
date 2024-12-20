@@ -1,0 +1,6 @@
+
+<li [style.width.px]="w">
+    <span>{{code}}</span>
+    <a href="{{href}}" target="_blank">{{content}}</a>
+    <button (click)="cclk(content)" *ngIf="blnshow">显示</button>
+</li>

@@ -1,0 +1,11 @@
+<p>{{_phone}}</p>
+<input #phone type="number" placeholder="请输入电话号码" />
+<div>{{phone.constructor.name}}
+    <button (click)="callPhone(phone.value)">提交</button>
+</div>
+<hr>
+<p>{{_phone2}}</p>
+<input ref-phone2 type="number" placeholder="请输入电话号码" />
+<div>
+    <button (click)="callPhone2(phone2.value)">提交</button>
+</div>

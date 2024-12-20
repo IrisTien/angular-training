@@ -1,0 +1,30 @@
+<h3>选择一周中的某一天</h3>
+<div>
+    请输入星期数字：
+    <input type='number' max="8" min="1" [(ngModel)]="num" />
+</div>
+<ul [ngSwitch]="num">
+    <li *ngSwitchCase="1">星期一</li>
+    <li *ngSwitchCase="2">星期二</li>
+    <li *ngSwitchCase="3">星期三</li>
+    <li *ngSwitchCase="4">星期四</li>
+    <li *ngSwitchCase="5">星期五</li>
+    <li *ngSwitchCase="6">星期六</li>
+    <li *ngSwitchCase="7">星期日</li>
+    <li *ngSwitchDefault>不存在</li>
+</ul>
+<ng-container *ngIf="num<=7">
+    <span>正常的值</span>
+</ng-container>
+<ng-container *ngIf="num>7">
+    <span>值不正常</span>
+</ng-container>
+<hr>
+<div [ngStyle]="{fontSize:num+'em'}">今天的天气非常好</div>
+<hr>
+<app-dt03-btn>
+    计时按钮
+</app-dt03-btn>
+<app-dt03-btn>
+    超时按钮
+</app-dt03-btn>

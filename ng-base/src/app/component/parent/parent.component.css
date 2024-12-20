@@ -1,0 +1,9 @@
+.tip{
+    color:orange;
+}
+ul{
+    border:solid 1px #ccc;
+}
+h3,ul,p{
+   margin:8px 0;
+}

@@ -1,0 +1,8 @@
+p,div,ul{
+    margin: 10px 0;
+}
+ul>li{
+    background-color: bisque;
+    padding: 8px;
+    font-size: 13px
+}

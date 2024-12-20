@@ -1,0 +1,11 @@
+li{
+    border-bottom: dashed 1px #ccc;
+    padding: 5px 10px;
+    overflow: hidden;
+}
+a,button,span{
+    float: left;
+}
+a,span{
+    width: 100px;
+}

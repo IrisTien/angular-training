@@ -1,0 +1,25 @@
+<h3>Observable 返回的是 cold 还是 hot 数据</h3>
+<ul>
+    <li class="title">
+        <span>姓名</span>
+        <span>籍贯</span>
+        <span>学历</span>
+    </li>
+    <li *ngFor="let user of users$ | async">
+        <span>{{user.name}}</span>
+        <span>{{user.jg}}</span>
+        <span>{{user.xl}}</span>
+    </li>
+</ul>
+<ul>
+    <li class="title">
+        <span>姓名</span>
+        <span>籍贯</span>
+        <span>学历</span>
+    </li>
+    <li *ngFor="let user of users$ | async">
+        <span>{{user.name}}</span>
+        <span>{{user.jg}}</span>
+        <span>{{user.xl}}</span>
+    </li>
+</ul>

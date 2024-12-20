@@ -1,0 +1,86 @@
+<div class="iframe">
+  <div class="top">
+    <h3>{{title}}</h3>
+  
+  </div>
+  <div class="content">
+    <div class="c-left">
+      <ul>
+        <li>基础语法
+          <ol>
+            <li><a routerLinkActive="active" routerLink="/first">插值显示属性</a></li>
+            <li><a routerLinkActive="active" routerLink="/second">DOM属性绑定</a></li>
+            <li><a routerLinkActive="active" routerLink="/three">事件绑定</a></li>
+            <li><a routerLinkActive="active" routerLink="/four">双向数据绑定</a></li>
+            <li><a routerLinkActive="active" routerLink="/five">组件生命周期</a></li>
+          </ol>
+        </li>
+        <li>组件与模板
+          <ol>
+            <li><a routerLinkActive="active" routerLink="/parent">父子间的调用</a></li>
+            <li><a routerLinkActive="active" routerLink="/base">模板引用变量</a></li>
+            <li><a routerLinkActive="active" routerLink="/viewchild">@vc装饰器</a></li>
+            <li><a routerLinkActive="active" routerLink="/twb">原始双向绑定</a></li>
+          </ol>
+        </li>
+        <li>指令的使用
+          <ol>
+            <li><a routerLinkActive="active" routerLink="/dt01">显示与隐藏元素</a></li>
+            <li><a routerLinkActive="active" routerLink="/dt02">遍历元素</a></li>
+            <li><a routerLinkActive="active" routerLink="/dt03">选择元素</a></li>
+            <li><a routerLinkActive="active" routerLink="/dt04">@cc装饰器</a></li>
+            <li><a routerLinkActive="active" routerLink="/dt05">使用自定义指令</a></li>
+          </ol>
+        </li>
+        <li>路由的使用
+          <ol>
+            <li><a routerLinkActive="active" routerLink="javascript:void(0);" (click)="goto('home')">显示首页</a></li>
+            <li><a routerLinkActive="active" routerLink="javascript:void(0);" (click)="goto('product')">显示产品</a></li>
+            <li><a routerLinkActive="active" routerLink="/rt01">传递配置参数</a></li>
+            <li><a routerLinkActive="active" routerLink="javascript:void(0);" (click)="goto2('login')">传递路径参数</a></li>
+            <li><a routerLinkActive="active" routerLink="javascript:void(0);" (click)="goto3('register')">传递可选参数</a></li>
+            <li><a routerLinkActive="active" routerLink="javascript:void(0);" (click)="goto4('search')">传递查询参数</a></li>
+            
+          </ol>
+        </li>
+        <li>服务的注入
+          <ol>
+            <li><a routerLinkActive="active" routerLink="/m01">延迟加载</a></li>
+            <li><a routerLinkActive="active" routerLink="/m02">服务注入</a></li>
+            <li><a routerLinkActive="active" routerLink="/m03">服务注入2</a></li>
+          </ol>
+        </li>
+        <li>表单的使用
+          <ol>
+            <li><a routerLinkActive="active" routerLink="/frm01">模板驱动表单</a></li>
+            <li><a routerLinkActive="active" routerLink="/frm02">响应式表单</a></li>
+          </ol>
+        </li>
+        <li>管道符使用
+          <ol>
+            <li><a routerLinkActive="active" routerLink="/pipe">基础用法</a></li>
+            <li><a routerLinkActive="active" routerLink="/mypipe">自定义管道符</a></li>
+          </ol>
+        </li>
+        <li>数据请求
+            <ol>
+              <li><a routerLinkActive="active" routerLink="/htp01">基础请求</a></li>
+              <li><a routerLinkActive="active" routerLink="/htp02">检测请求</a></li>
+              <li><a routerLinkActive="active" routerLink="/htp03">RxJS缓存</a></li>
+            </ol>
+          </li>
+          <li>性能优化
+            <ol>
+              <li><a routerLinkActive="active" routerLink="/ppp">不可变化</a></li>
+              <li><a routerLinkActive="active" routerLink="/ggg">可以变化</a></li>
+            </ol>
+          </li>
+      </ul>
+      <button class="logout" (click)="logout()">退出</button>
+    </div>
+    <div class="c-right">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <div class="footer">@2023 angular 公司版权所有</div>
+</div>

@@ -1,0 +1,15 @@
+<h3>学生信息</h3>
+<ul>
+    <li class="title">
+        <span>学号</span>
+        <span>姓名</span>
+        <span>性别</span>
+        <span>分数</span>
+    </li>
+    <li *ngFor="let stu of stus;let blnlast=last;let blnodd=odd" [class.odd]="blnodd" [class.noline]="blnlast">
+        <span>{{stu.code}}</span>
+        <span>{{stu.name}}</span>
+        <span>{{stu.sex}}</span>
+        <span>{{stu.score}}</span>
+    </li>
+</ul>

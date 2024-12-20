@@ -1,0 +1,16 @@
+<h3>父传参调用子组件</h3>
+<ul style="width: 220px">
+    <app-child-title [w]="200" [code]="title_list[0]" [content]="title_list[1]"></app-child-title>   
+    <app-child [w]="200" [code]="li_list[0].code" [href]="li_list[0].href" [blnshow]="blnIf" [content]="li_list[0].content"></app-child>
+    <app-child [w]="200" [code]="li_list[1].code" [href]="li_list[1].href" [blnshow]="blnIf" [content]="li_list[1].content"></app-child>
+    <app-child [w]="200" [code]="li_list[2].code" [href]="li_list[2].href" [blnshow]="blnIf" [content]="li_list[2].content"></app-child>
+</ul>
+<hr>
+<h3>父传参调用子组件,且子传参给父组件</h3>
+<p>你选择的是：<span class="tip">{{str}}</span></p>
+<ul>
+    <app-child-title [code]="title_list[0]" [content]="title_list[1]" [action]="title_list[2]"></app-child-title>   
+    <app-child [code]="li_list[0].code" [href]="li_list[0].href" [content]="li_list[0].content" [blnshow]="!blnIf" (clk)="pclk(li_list[0].content)"></app-child>
+    <app-child [code]="li_list[1].code" [href]="li_list[1].href" [content]="li_list[1].content" [blnshow]="!blnIf" (clk)="pclk(li_list[1].content)"></app-child>
+    <app-child [code]="li_list[2].code" [href]="li_list[2].href" [content]="li_list[2].content" [blnshow]="!blnIf" (clk)="pclk(li_list[2].content)"></app-child>
+</ul>

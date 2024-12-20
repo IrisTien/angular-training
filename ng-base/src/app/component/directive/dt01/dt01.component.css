@@ -1,0 +1,11 @@
+p,div,ul{
+    margin: 10px 0;
+}
+ul{
+    padding: 8px;
+    background-color: bisque;
+}
+.blue{
+    background-color: blue;
+    color:#fff;
+}

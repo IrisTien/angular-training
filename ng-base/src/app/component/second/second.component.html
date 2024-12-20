@@ -1,0 +1,32 @@
+<img [src]="imgurl" alt="">
+<img src="{{imgurl}}" alt="">
+<img src="{{imgurl}}" [title]="stralt">
+<hr>
+<table border="1">
+    <tr>
+        <!-- 组件类属性绑定到 DOM 特性时需要添加 attr -->
+        <td align="center" [attr.colspan]="num">
+            你好
+        </td>
+    </tr>
+    <tr>
+        <td>张三</td>
+        <td>李四</td>
+        <td>王二</td>
+        <td>牛七</td>
+    </tr>
+</table>
+<hr>
+<!-- 绑定属性样式 -->
+<div>
+    <h3 [class]="red">今天是一个晴天</h3>
+    <h3 [attr.class]="blue">明天可能会下雨</h3>
+    <h3 class="green" [class.size]="blnCls">后天又是好天气</h3>
+</div>
+<hr>
+<!-- 绑定内联样式 -->
+<div>
+    <p>今天是一个<span [style.color]="red">晴天</span></p>
+    <p>明天可能会<span [style.font-size.em]="num">下雨</span></p>
+    <p>后天又是<span [style.color]="red" [style.font-size.%]="font">好</span>天气</p>
+</div>

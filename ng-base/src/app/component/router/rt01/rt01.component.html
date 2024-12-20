@@ -1,0 +1,14 @@
+<h3>获取路径的配置和片段参数</h3>
+<ul>
+    <li>配置参数是：<span>{{title}}</span></li>
+    <li *ngIf="fragment">片段参数是：<span>{{fragment}}</span></li>
+    <li *ngIf="a">可选参数是：<span>{{a}}</span></li>
+    <li *ngIf="b">可选参数是：<span>{{b}}</span></li>
+    <li *ngIf="id">查询参数是：<span>{{id}}</span></li>
+</ul>
+<hr *ngIf="id">
+<ul *ngIf="id">
+    <li *ngFor="let stu of arrStu">
+        <a [routerLink]="['/rt01']" [queryParams]="{id: stu.id}">{{stu.name}}</a>
+    </li>
+</ul>
